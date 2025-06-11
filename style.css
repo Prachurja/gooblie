@@ -1,0 +1,79 @@
+:root {
+    --dark-color: black;
+    --light-color: white;
+    --medium-color: grey;
+    --transition: 200ms;
+}
+
+* {
+    font-family: "Edu NSW ACT Hand Pre";
+    transform: var(--transition);
+}
+
+body {
+    background-color: var(--medium-color);
+    color: var(--dark-color)
+}
+
+h1 {
+    text-transform: uppercase;
+}
+
+div {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+img {
+    transition: var(--transition);
+    width: 20rem;
+    height: 20rem;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+img:hover {
+    transition: var(--transition);
+    width: 21rem;
+    height: 21rem;
+}
+
+h1 {
+    transition: var(--transition);
+    border-top: solid var(--dark-color) 0.1rem;
+    color: var(--dark-color);
+}
+
+h1:hover {
+    color: var(--light-color);
+    border-top: solid var(--light-color) 0.1rem;
+}
+
+button {
+    font-family: "Edu NSW ACT Hand Pre";
+    transition: 100ms;
+    background-color: var(--light-color);
+    color: var(--dark-color);
+    border: solid 0.1rem var(--dark-color);
+    padding: 1rem 3rem;
+    margin-block: 1rem;
+}
+
+button:hover {
+    transition: var(--transition);
+    background-color: var(--dark-color);
+    color: var(--light-color);
+    border: solid 0.1rem var(--light-color);
+}
+
+p {
+    transition: var(--transition);
+}
+
+p:hover {
+    font-size: 1.1rem;
+    color: var(--light-color);
+}
